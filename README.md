@@ -1,20 +1,34 @@
-# Memory Game Project
+# Memory Game
 
-## Table of Contents
+This isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+A complete browser-based card matching game (also known as Concentration).
 
-## Instructions
+## Quickstart
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+To play:
+* click [here](https://playsnowi.github.io/Memory-Game/)
 
-To get started, open `js/app.js` and start building out the app's functionality
+or
+* download the zip or clone the directory to your computer and open the `index.html` file in a web browser.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Game objective
+There are 8 pairs of cards with matching images.
 
-## Contributing
+To win the game, match the 8 pairs of cards.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## How to play
+Click each card to reveal the image.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+When you have one pair open, if the images match, the cards stay open and you can try to find the other matches.
+
+If the images don't match, the cards will close and you can try again to find any matches.
+
+When you click the first card, a timer will start and the game will show your number of moves.
+
+At the end, you will receive a star rating based on your number of moves:
+* 3 stars: less than 25 moves
+* 2 stars: 25-32 moves
+* 1 star: more than 32 moves
+
+> #**MadeWithUdacity**

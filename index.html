@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#02b3e4">
     <title>Matching Game</title>
     <meta name="description" content="">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="img/udacity.png">
 </head>
 <body>
 
@@ -17,16 +20,18 @@
 
         <section class="score-panel">
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li class="first-star"><i class="fa fa-star"></i></li>
+        		<li class="second-star"><i class="fa fa-star"></i></li>
+        		<li class="third-star"><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">3</span> Moves
+        	<span class="moves">0</span> Moves
 
             <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
+        		  <i class="fa fa-repeat"></i>
+              <span class="timer">0</span> Seconds
+        	  </div>
+
         </section>
 
         <ul class="deck">
@@ -36,7 +41,7 @@
             <li class="card">
                 <i class="fa fa-paper-plane-o"></i>
             </li>
-            <li class="card match">
+            <li class="card">
                 <i class="fa fa-anchor"></i>
             </li>
             <li class="card">
@@ -45,7 +50,7 @@
             <li class="card">
                 <i class="fa fa-cube"></i>
             </li>
-            <li class="card match">
+            <li class="card">
                 <i class="fa fa-anchor"></i>
             </li>
             <li class="card">
@@ -66,7 +71,7 @@
             <li class="card">
                 <i class="fa fa-bomb"></i>
             </li>
-            <li class="card open show">
+            <li class="card">
                 <i class="fa fa-bolt"></i>
             </li>
             <li class="card">
@@ -81,6 +86,19 @@
         </ul>
     </div>
 
+    <!-- The Modal -->
+    <div class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <i class="fa fa-check-circle"></i>
+        <p class="congrats">Congratulations! You won!</p>
+        <p class="results">With <span class="final-moves">0</span> Moves and <span class="final-stars">0</span> Star(s) in <span class="final-time">0</span> seconds.</p>
+        <p class="happy"> Woooooo!</p>
+        <button type="button" class="play-again">Play Again!</button>
+      </div>
+
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
